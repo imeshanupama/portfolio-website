@@ -161,6 +161,79 @@ footer a:hover {
     font-size: 18px;
     line-height: 1.6;
 }
+.projects{
+    padding: 80px;
+    padding-bottom: 40px;
+}
+.projects h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.project-card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tech-stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+    justify-content: center;
+}
+.tech-stack span{
+    background-color: #007BFF;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.project-info h3{
+    text-align: center;
+}
+
+.project-links{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.project-links a{
+    padding: 10px;
+    background-color: bisque;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    
+
+}
+.project-image{
+    display: flex;
+    justify-content: center;
+}
+
+.project-links a:hover{
+    background-color: aqua;
+    transform: translate(-2px);
+}
+
+
+
+
+
 
 
 
