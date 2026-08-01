@@ -1,0 +1,199 @@
+/* ==========================================================
+   1. DARK MODE VARIABLES
+========================================================== */
+
+/*
+Dark mode changes
+the CSS variables.
+
+Every element using
+these variables
+updates automatically.
+*/
+
+body.dark-mode{
+
+    /* ======================
+       MAIN COLORS
+    ====================== */
+
+    /* Main Text */
+    --ink:#eef5ef;
+
+    /* Secondary Text */
+    --muted:#adbdba;
+
+    /* Website Background */
+    --paper:#15201f;
+
+    /* Card Background */
+    --card:#1d2a28;
+
+    /* Borders */
+    --line:#364442;
+
+    /* Soft Background */
+    --soft:#233331;
+
+    /* Accent Colors */
+    --accent:#ff8d6e;
+
+    --accent-dark:#ed7658;
+
+}
+
+
+
+/* ==========================================================
+   2. HERO IMAGE
+========================================================== */
+
+/*
+Reduce brightness slightly
+to match
+the dark theme.
+*/
+
+body.dark-mode .portrait{
+
+    filter:
+
+        grayscale(35%)
+
+        brightness(.88);
+
+}
+
+
+
+/* ==========================================================
+   3. SKILLS SECTION
+========================================================== */
+
+/*
+Slightly darker
+background.
+*/
+
+body.dark-mode .skills{
+
+    background:#1b2a28;
+
+}
+
+
+
+/* ==========================================================
+   4. PROJECT PREVIEWS
+========================================================== */
+
+/*
+Food Rescue
+*/
+
+body.dark-mode .food{
+
+    background:#9e7341;
+
+}
+
+
+
+/*
+Weather App
+*/
+
+body.dark-mode .weather{
+
+    background:#35728d;
+
+}
+
+
+
+/* ==========================================================
+   5. CONTACT SECTION
+========================================================== */
+
+/*
+Keep the contact section
+dark in both themes.
+*/
+
+body.dark-mode .contact{
+
+    background:#101818;
+
+    color:#eef5ef;
+
+}
+
+
+
+/*
+Contact description.
+*/
+
+body.dark-mode .contact-intro,
+
+body.dark-mode .location,
+
+body.dark-mode .form-status{
+
+    color:#bdcac7;
+
+}
+
+
+
+/*
+Inputs
+*/
+
+body.dark-mode .contact-form input,
+
+body.dark-mode .contact-form textarea{
+
+    border-bottom:
+
+        1px solid
+
+        #52615e;
+
+}
+
+
+
+/*
+Input focus.
+*/
+
+body.dark-mode .contact-form input:focus,
+
+body.dark-mode .contact-form textarea:focus{
+
+    border-color:var(--accent);
+
+}
+
+
+
+/* ==========================================================
+   6. FOOTER
+========================================================== */
+
+/*
+Footer background.
+*/
+
+body.dark-mode footer{
+
+    background:#0d1514;
+
+    border-top:
+
+        1px solid
+
+        #2f3d3b;
+
+}

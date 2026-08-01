@@ -1,0 +1,304 @@
+/* ==========================================================
+   1. CONTACT SECTION
+========================================================== */
+
+/*
+The Contact section is
+the last major section
+before the footer.
+
+It contains:
+
+• Contact information
+• Contact form
+*/
+
+.contact{
+
+    background:var(--ink);
+
+    color:var(--paper);
+
+}
+
+
+
+/* ==========================================================
+   2. CONTACT LAYOUT
+========================================================== */
+
+/*
+Two-column layout.
+
+Left
+→ Contact Information
+
+Right
+→ Contact Form
+*/
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        1fr
+
+        .78fr;
+
+    gap:8rem;
+
+}
+
+
+
+/* ==========================================================
+   3. SECTION LABEL
+========================================================== */
+
+/*
+Small orange label
+above the heading.
+*/
+
+.contact .section-label{
+
+    color:#f99e86;
+
+}
+
+
+
+/* ==========================================================
+   4. CONTACT HEADING
+========================================================== */
+
+.contact h2{
+
+    margin:
+
+        1rem
+
+        0
+
+        1.5rem;
+
+}
+
+
+
+/*
+Highlighted word
+inside heading.
+*/
+
+.contact h2 em{
+
+    color:var(--accent);
+
+    font-weight:400;
+
+}
+
+
+
+/* ==========================================================
+   5. INTRODUCTION
+========================================================== */
+
+/*
+Description paragraph.
+*/
+
+.contact-intro{
+
+    max-width:28rem;
+
+    color:#bdcac7;
+
+}
+
+
+
+/* ==========================================================
+   6. EMAIL LINK
+========================================================== */
+
+/*
+Email address.
+*/
+
+.contact-email{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:.5rem;
+
+    margin-top:2rem;
+
+    font-size:1.1rem;
+
+    font-weight:700;
+
+    border-bottom:
+
+        1px solid
+
+        currentColor;
+
+}
+
+
+
+/* ==========================================================
+   7. LOCATION
+========================================================== */
+
+/*
+Location text.
+*/
+
+.location{
+
+    margin-top:2rem;
+
+    color:#bdcac7;
+
+    font-family:var(--mono);
+
+    font-size:.7rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+}
+
+
+
+/* ==========================================================
+   8. CONTACT FORM
+========================================================== */
+
+/*
+Form container.
+*/
+
+.contact-form{
+
+    display:grid;
+
+    gap:1.2rem;
+
+    align-content:start;
+
+}
+
+
+
+/* ==========================================================
+   9. FORM LABELS
+========================================================== */
+
+.contact-form label{
+
+    display:grid;
+
+    gap:.4rem;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+}
+
+
+
+/* ==========================================================
+   10. INPUTS & TEXTAREA
+========================================================== */
+
+.contact-form input,
+
+.contact-form textarea{
+
+    background:transparent;
+
+    color:var(--paper);
+
+    border:none;
+
+    border-bottom:
+
+        1px solid
+
+        #52615e;
+
+    padding:
+
+        .55rem
+
+        0;
+
+    outline:none;
+
+    resize:vertical;
+
+}
+
+
+
+/* ==========================================================
+   11. INPUT FOCUS
+========================================================== */
+
+/*
+Highlight active input.
+*/
+
+.contact-form input:focus,
+
+.contact-form textarea:focus{
+
+    border-color:#f99e86;
+
+}
+
+
+
+/* ==========================================================
+   12. SUBMIT BUTTON
+========================================================== */
+
+.contact-form .button{
+
+    justify-self:start;
+
+    margin-top:.6rem;
+
+}
+
+
+
+/* ==========================================================
+   13. FORM STATUS
+========================================================== */
+
+/*
+Displays messages like:
+
+"Thanks Imesh!"
+*/
+
+.form-status{
+
+    min-height:1.3rem;
+
+    font-size:.82rem;
+
+    color:#bdcac7;
+
+}

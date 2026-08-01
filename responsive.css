@@ -1,0 +1,343 @@
+/* ==========================================================
+   RESPONSIVE DESIGN
+========================================================== */
+
+/*
+This file contains all styles
+for tablets and mobile devices.
+
+Desktop styles stay
+inside their original files.
+
+Only responsive changes
+are placed here.
+*/
+
+
+/* ==========================================================
+   TABLETS
+   Screen Width: 800px and below
+========================================================== */
+
+@media (max-width:800px){
+
+    /* ======================
+       NAVIGATION
+    ====================== */
+
+    .nav{
+
+        min-height:64px;
+
+        position:relative;
+
+    }
+
+
+
+    /*
+    Show hamburger button.
+    */
+
+    .menu-button{
+
+        display:block;
+
+        margin-left:auto;
+
+    }
+
+
+
+    /*
+    Hide navigation links.
+    */
+
+    .nav-links{
+
+        display:none;
+
+        position:absolute;
+
+        top:64px;
+
+        left:0;
+
+        right:0;
+
+        padding:1rem 1.5rem;
+
+        background:var(--paper);
+
+        border-bottom:
+
+            1px solid
+
+            var(--line);
+
+        flex-direction:column;
+
+        gap:1rem;
+
+    }
+
+
+
+    /*
+    Open mobile menu.
+    */
+
+    .nav-links.open{
+
+        display:flex;
+
+    }
+
+
+
+    /*
+    Move theme button.
+    */
+
+    .theme-button{
+
+        order:3;
+
+    }
+
+
+
+    /* ======================
+       HERO
+    ====================== */
+
+    .hero{
+
+        grid-template-columns:1fr;
+
+        gap:3rem;
+
+        padding-top:3.5rem;
+
+    }
+
+
+
+    .portrait-wrap{
+
+        justify-self:start;
+
+        width:min(
+
+            100%,
+
+            360px
+
+        );
+
+        margin-left:1.2rem;
+
+    }
+
+
+
+    .portrait{
+
+        height:410px;
+
+    }
+
+
+
+    /* ======================
+       ABOUT
+    ====================== */
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+
+        gap:2rem;
+
+    }
+
+
+
+    /* ======================
+       SECTION HEADINGS
+    ====================== */
+
+    .section-heading{
+
+        display:grid;
+
+    }
+
+
+
+    /* ======================
+       SKILLS
+    ====================== */
+
+    .skills-grid{
+
+        grid-template-columns:
+
+            repeat(2,1fr);
+
+    }
+
+
+
+    /* ======================
+       PROJECTS
+    ====================== */
+
+    .projects-grid{
+
+        grid-template-columns:
+
+            repeat(2,1fr);
+
+    }
+
+
+
+    /* ======================
+       CONTACT
+    ====================== */
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+        gap:3.5rem;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   MOBILE PHONES
+   Screen Width: 520px and below
+========================================================== */
+
+@media (max-width:520px){
+
+    /* ======================
+       CONTAINER
+    ====================== */
+
+    .container{
+
+        width:min(
+
+            100% - 2rem,
+
+            1120px
+
+        );
+
+    }
+
+
+
+    /* ======================
+       HERO
+    ====================== */
+
+    .hero h1{
+
+        font-size:3.2rem;
+
+    }
+
+
+
+    .hero-meta{
+
+        gap:1rem;
+
+        flex-wrap:wrap;
+
+    }
+
+
+
+    .hero-actions{
+
+        gap:1rem;
+
+    }
+
+
+
+    .portrait{
+
+        height:370px;
+
+    }
+
+
+
+    .portrait-caption{
+
+        left:-0.5rem;
+
+    }
+
+
+
+    /* ======================
+       GENERAL SECTION
+    ====================== */
+
+    .section{
+
+        padding:4.5rem 0;
+
+    }
+
+
+
+    /* ======================
+       SKILLS
+    ====================== */
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    /* ======================
+       PROJECTS
+    ====================== */
+
+    .projects-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    /* ======================
+       FOOTER
+    ====================== */
+
+    .footer-content{
+
+        min-height:110px;
+
+        flex-wrap:wrap;
+
+        align-content:center;
+
+    }
+
+}

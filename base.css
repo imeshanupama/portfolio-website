@@ -1,0 +1,230 @@
+/* ==========================================================
+   1. CSS VARIABLES
+========================================================== */
+
+/*
+This section stores the main colors,
+fonts, and reusable values used
+throughout the entire website.
+
+Instead of writing colors many times,
+we create variables here.
+*/
+
+:root{
+
+    /* ======================
+       COLORS
+    ====================== */
+
+    /* Main Text Color */
+    --ink:#172020;
+
+    /* Secondary Text */
+    --muted:#617070;
+
+    /* Website Background */
+    --paper:#f6f4ee;
+
+    /* Cards */
+    --card:#fffefa;
+
+    /* Borders */
+    --line:#d8d9d1;
+
+    /* Main Accent */
+    --accent:#e96545;
+
+    /* Accent Hover */
+    --accent-dark:#ca5134;
+
+    /* Soft Background */
+    --soft:#e3ebe2;
+
+
+
+    /* ======================
+       FONTS
+    ====================== */
+
+    /* Main Font */
+
+    --display:'Manrope',sans-serif;
+
+    /* Mono Font */
+
+    --mono:'DM Mono',monospace;
+
+}
+
+
+
+/* ==========================================================
+   2. RESET
+========================================================== */
+
+/*
+Remove browser default spacing.
+
+This gives us a clean starting point.
+*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+/* ==========================================================
+   3. HTML
+========================================================== */
+
+/*
+Smooth scrolling
+when clicking navigation links.
+*/
+
+html{
+
+    scroll-behavior:smooth;
+
+    scroll-padding-top:5rem;
+
+}
+
+
+
+/* ==========================================================
+   4. BODY
+========================================================== */
+
+body{
+
+    background:var(--paper);
+
+    color:var(--ink);
+
+    font-family:var(--display);
+
+    line-height:1.6;
+
+    transition:
+
+        background-color .25s;
+
+}
+
+
+
+/* ==========================================================
+   5. LINKS
+========================================================== */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+
+
+/* ==========================================================
+   6. BUTTONS
+========================================================== */
+
+button{
+
+    font:inherit;
+
+    cursor:pointer;
+
+}
+
+
+
+/* ==========================================================
+   7. INPUTS
+========================================================== */
+
+input,
+
+textarea{
+
+    font:inherit;
+
+}
+
+
+
+/* ==========================================================
+   8. IMAGES
+========================================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+
+
+/* ==========================================================
+   9. CONTAINER
+========================================================== */
+
+/*
+Keeps all sections
+centered on the page.
+*/
+
+.container{
+
+    width:min(
+
+        1120px,
+
+        calc(100% - 3rem)
+
+    );
+
+    margin:auto;
+
+}
+
+
+
+/* ==========================================================
+   10. SCREEN READER ONLY
+========================================================== */
+
+/*
+Hide content visually
+while keeping it accessible
+for screen readers.
+*/
+
+.sr-only{
+
+    position:absolute;
+
+    width:1px;
+
+    height:1px;
+
+    overflow:hidden;
+
+    clip:rect(0,0,0,0);
+
+    white-space:nowrap;
+
+}

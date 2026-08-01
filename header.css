@@ -1,0 +1,260 @@
+/* ==========================================================
+   1. HEADER
+========================================================== */
+
+/*
+The header stays at the top
+of the page while scrolling.
+*/
+
+.site-header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:10;
+
+    background:
+
+        color-mix(
+
+            in srgb,
+
+            var(--paper) 92%,
+
+            transparent
+
+        );
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:
+
+        1px solid
+
+        var(--line);
+
+}
+
+
+
+/* ==========================================================
+   2. NAVIGATION
+========================================================== */
+
+/*
+The navigation uses Flexbox
+to place the logo,
+navigation links,
+and buttons
+on one line.
+*/
+
+.nav{
+
+    min-height:74px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:2rem;
+
+}
+
+
+
+/* ==========================================================
+   3. LOGO
+========================================================== */
+
+/*
+Website logo
+*/
+
+.logo{
+
+    font-size:1.45rem;
+
+    font-weight:800;
+
+    letter-spacing:-0.1em;
+
+}
+
+
+
+/*
+Accent color
+for part of the logo.
+*/
+
+.logo span{
+
+    color:var(--accent);
+
+}
+
+
+
+/* ==========================================================
+   4. NAVIGATION LINKS
+========================================================== */
+
+/*
+Navigation menu.
+*/
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:1.65rem;
+
+    margin-left:auto;
+
+}
+
+
+
+/*
+Each navigation link.
+*/
+
+.nav-link{
+
+    color:var(--muted);
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    transition:
+
+        color .25s;
+
+}
+
+
+
+/*
+Hover effect.
+
+Also used for
+the active page.
+*/
+
+.nav-link:hover,
+
+.nav-link.active{
+
+    color:var(--accent);
+
+}
+
+
+
+/* ==========================================================
+   5. THEME BUTTON
+========================================================== */
+
+/*
+Dark Mode button.
+*/
+
+.theme-button{
+
+    width:38px;
+
+    height:38px;
+
+    border-radius:50%;
+
+    border:
+
+        1px solid
+
+        var(--line);
+
+    background:transparent;
+
+    color:var(--ink);
+
+    font-size:1.1rem;
+
+    cursor:pointer;
+
+    transition:
+
+        background .25s,
+
+        color .25s,
+
+        border-color .25s;
+
+}
+
+
+
+/*
+Hover effect.
+*/
+
+.theme-button:hover{
+
+    background:var(--soft);
+
+}
+
+
+
+/* ==========================================================
+   6. MOBILE MENU BUTTON
+========================================================== */
+
+/*
+Hidden on desktop.
+
+Visible on mobile.
+*/
+
+.menu-button{
+
+    display:none;
+
+    width:38px;
+
+    height:38px;
+
+    border-radius:50%;
+
+    border:
+
+        1px solid
+
+        var(--line);
+
+    background:transparent;
+
+    color:var(--ink);
+
+    font-size:1.2rem;
+
+    cursor:pointer;
+
+}
+
+
+
+/*
+Hover effect.
+*/
+
+.menu-button:hover{
+
+    background:var(--soft);
+
+}

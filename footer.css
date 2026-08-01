@@ -1,0 +1,112 @@
+/* ==========================================================
+   1. FOOTER
+========================================================== */
+
+/*
+The footer is the last section
+of the website.
+
+It contains:
+
+• Copyright
+• Back to Top link
+*/
+
+footer{
+
+    background:#101818;
+
+    color:#bdcac7;
+
+    border-top:
+
+        1px solid
+
+        #34403e;
+
+}
+
+
+
+/* ==========================================================
+   2. FOOTER LAYOUT
+========================================================== */
+
+/*
+Use Flexbox to place
+content on one row.
+
+Left
+→ Copyright
+
+Right
+→ Back to Top
+*/
+
+.footer-content{
+
+    min-height:78px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:1rem;
+
+}
+
+
+
+/* ==========================================================
+   3. FOOTER TEXT
+========================================================== */
+
+/*
+Small copyright text.
+*/
+
+.footer-content p{
+
+    font-size:.74rem;
+
+}
+
+
+
+/* ==========================================================
+   4. BACK TO TOP LINK
+========================================================== */
+
+/*
+Scrolls back
+to the top
+of the page.
+*/
+
+.back-top{
+
+    font-size:.74rem;
+
+    color:inherit;
+
+    text-decoration:none;
+
+    transition:
+
+        color .25s;
+
+}
+
+
+
+/*
+Hover effect.
+*/
+
+.back-top:hover{
+
+    color:white;
+
+}

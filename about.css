@@ -1,0 +1,206 @@
+/* ==========================================================
+   1. GENERAL SECTION SPACING
+========================================================== */
+
+/*
+Every major section
+uses the same
+top and bottom spacing.
+*/
+
+.section{
+
+    padding:
+
+        7rem
+
+        0;
+
+}
+
+
+
+/* ==========================================================
+   2. ABOUT SECTION
+========================================================== */
+
+/*
+The About section
+starts with
+a top border.
+*/
+
+.about{
+
+    border-top:
+
+        1px solid
+
+        var(--line);
+
+}
+
+
+
+/* ==========================================================
+   3. ABOUT LAYOUT
+========================================================== */
+
+/*
+The About section
+uses two columns.
+
+Left
+
+→ Heading
+
+Right
+
+→ Description
+*/
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        1.05fr
+
+        .8fr;
+
+    gap:9rem;
+
+    margin-top:1.2rem;
+
+}
+
+
+
+/* ==========================================================
+   4. SECTION HEADINGS
+========================================================== */
+
+/*
+Large headings
+used in multiple sections.
+
+Example:
+
+About
+
+Skills
+
+Contact
+*/
+
+.about h2,
+
+.section-heading h2,
+
+.contact h2{
+
+    font-size:
+
+        clamp(
+
+            2.35rem,
+
+            4.3vw,
+
+            4.1rem
+
+        );
+
+    line-height:1.05;
+
+    letter-spacing:-.06em;
+
+}
+
+
+
+/* ==========================================================
+   5. ABOUT DESCRIPTION
+========================================================== */
+
+/*
+Right-side text.
+*/
+
+.about-copy{
+
+    display:grid;
+
+    gap:1.2rem;
+
+    align-content:start;
+
+    color:var(--muted);
+
+}
+
+
+
+/*
+Paragraph spacing.
+*/
+
+.about-copy p{
+
+    line-height:1.8;
+
+}
+
+
+
+/*
+Read More link.
+*/
+
+.about-copy .text-link{
+
+    width:max-content;
+
+    margin-top:.6rem;
+
+    color:var(--ink);
+
+}
+
+
+
+/* ==========================================================
+   6. SHARED SECTION LABEL
+========================================================== */
+
+/*
+Small orange label
+displayed above headings.
+
+Used in:
+
+About
+
+Skills
+
+Projects
+
+Contact
+*/
+
+.section-label{
+
+    font-family:var(--mono);
+
+    font-size:.73rem;
+
+    font-weight:500;
+
+    text-transform:uppercase;
+
+    letter-spacing:.07em;
+
+    color:var(--accent);
+
+}

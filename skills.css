@@ -1,0 +1,235 @@
+/* ==========================================================
+   1. SKILLS SECTION
+========================================================== */
+
+/*
+The Skills section
+has a different background
+to separate it from
+other sections.
+*/
+
+.skills{
+
+    background:var(--soft);
+
+}
+
+
+
+/* ==========================================================
+   2. SECTION HEADING
+========================================================== */
+
+/*
+Used for sections
+that have
+
+• Title
+
+• Description
+
+side by side.
+*/
+
+.section-heading{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:end;
+
+    gap:2rem;
+
+    margin:
+
+        1rem
+
+        0
+
+        2.6rem;
+
+}
+
+
+
+/*
+Description text
+next to heading.
+*/
+
+.section-heading > p{
+
+    max-width:23rem;
+
+    color:var(--muted);
+
+}
+
+
+
+/* ==========================================================
+   3. SKILLS GRID
+========================================================== */
+
+/*
+Display skill cards
+in three columns.
+*/
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(3,1fr);
+
+    border-left:
+
+        1px solid
+
+        var(--line);
+
+    border-top:
+
+        1px solid
+
+        var(--line);
+
+}
+
+
+
+/* ==========================================================
+   4. SKILL CARD
+========================================================== */
+
+/*
+Each skill
+is displayed
+inside a card.
+*/
+
+.skill-card{
+
+    min-height:195px;
+
+    padding:1.4rem;
+
+    background:
+
+        color-mix(
+
+            in srgb,
+
+            var(--card) 70%,
+
+            transparent
+
+        );
+
+    border-right:
+
+        1px solid
+
+        var(--line);
+
+    border-bottom:
+
+        1px solid
+
+        var(--line);
+
+    transition:
+
+        background .25s,
+
+        transform .25s,
+
+        box-shadow .25s;
+
+}
+
+
+
+/*
+Card hover effect.
+*/
+
+.skill-card:hover{
+
+    background:var(--card);
+
+    transform:translateY(-4px);
+
+}
+
+
+
+/* ==========================================================
+   5. SKILL NUMBER
+========================================================== */
+
+/*
+Small number
+at the top
+of every card.
+
+Example:
+
+01
+
+02
+
+03
+*/
+
+.skill-number{
+
+    color:var(--accent);
+
+    font-family:var(--mono);
+
+    font-size:.7rem;
+
+}
+
+
+
+/* ==========================================================
+   6. SKILL TITLE
+========================================================== */
+
+.skill-card h3{
+
+    margin:
+
+        2.2rem
+
+        0
+
+        .45rem;
+
+    font-size:1.35rem;
+
+    letter-spacing:-.04em;
+
+}
+
+
+
+/* ==========================================================
+   7. SKILL DESCRIPTION
+========================================================== */
+
+.skill-card p{
+
+    color:var(--muted);
+
+    font-size:.87rem;
+
+    line-height:1.7;
+
+}
