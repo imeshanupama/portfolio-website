@@ -169,10 +169,10 @@ Leaf icon.
 
 
 /* ==========================================================
-   6. WEATHER PROJECT
+   6. Fintrack Expense Tracker PROJECT
 ========================================================== */
 
-.weather{
+.fintrack{
 
     position:relative;
 
@@ -185,22 +185,22 @@ Leaf icon.
 
 
 /*
-Weather icon.
+Fintrack icon.
 */
 
-.weather span{
+.fintrack span{
 
-    font-size:6rem;
+    font-size:7.4rem;
 
 }
 
 
 
 /*
-Temperature.
+Cash icon.
 */
 
-.weather i{
+.fintrack i{
 
     position:absolute;
 
